@@ -1,31 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Facebook Page Phone Extract</title>
-    <style>
-        #extractBtn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-        #downloadBtn {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>FB Phone Extract</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    width: 260px;
+    padding: 12px;
+    background: #f9fafb;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#extractBtn {
+    background: #0d6efd;
+    color: white;
+}
+
+#downloadBtn {
+    background: #198754;
+    color: white;
+}
+
+#status {
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+#qualityBox {
+    display: none;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+#qualityLight {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.footer {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #6c757d;
+    text-align: center;
+}
+</style>
 </head>
+
 <body>
-    <h3>FB Phone Extract</h3>
-    <button id="extractBtn">Extract Phone</button><br>
-    <button id="downloadBtn">Download CSV</button>
-    <p id="status"></p>
-<P>Version:0.1 } Powered by biddasoft.com</P>
-    <script src="popup.js"></script>
+
+<div class="header">
+    <div class="icon">FQL</div>
+    <div class="title">Facebook Quality Lead</div>
+</div>
+
+<button id="extractBtn">Extract Phone</button>
+<button id="downloadBtn">Download CSV</button>
+
+<div id="qualityBox">
+    <span id="qualityLight"></span>
+    <span id="qualityText"></span>
+</div>
+
+<p id="status"></p>
+
+<div class="footer">
+    Version 0.3 · Powered by biddasoft.com
+</div>
+
+<script src="popup.js"></script>
 </body>
 </html>

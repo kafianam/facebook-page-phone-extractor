@@ -1,7 +1,23 @@
 {
   "manifest_version": 3,
   "name": "Facebook Page Phone Extract",
-  "version": "1.1",
+  "version": "1.1.2",
+  "icons": {
+  "16": "icons/icon16.png",
+  "32": "icons/icon32.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+},
+"action": {
+  "default_icon": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_title": "Facebook Quality Lead"
+},
+
   "description": "Extracts phone numbers and page link manually into CSV.",
   "permissions": ["activeTab", "scripting", "downloads", "storage"],
   "host_permissions": ["https://www.facebook.com/*", "https://biddasoft.com/*"],
